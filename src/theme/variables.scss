@@ -1,0 +1,14 @@
+
+html {
+  --ion-dynamic-font: var(--ion-default-dynamic-font);
+}
+
+.ios body {
+  --ion-background-color: #2b124c;
+  --ion-text-color: #D3C3B9;
+}
+
+.md body {
+  --ion-background-color: #161B33;
+  --ion-text-color: #ffffff;
+}

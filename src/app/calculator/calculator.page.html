@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Calculator
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="container">
+    <div class="input">
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="input"></ion-input>
+      </ion-item>
+    </div>
+  
+    <div class="history">
+      <ion-item>
+        <ion-label position="floating">History</ion-label>
+        <ion-input type="text" [(ngModel)]="history"></ion-input>
+      </ion-item>
+    </div>
+  
+    <div class="numbers">
+      <div class="row">
+        <ion-button class="button" (click)="clicked('7')">7</ion-button>
+        <ion-button class="button" (click)="clicked('8')">8</ion-button>
+        <ion-button class="button" (click)="clicked('9')">9</ion-button>
+        <ion-button class="opbtn" (click)="division()">/</ion-button>
+      </div>
+      <div class="row">
+        <ion-button class="button" (click)="clicked('4')">4</ion-button>
+        <ion-button class="button" (click)="clicked('5')">5</ion-button>
+        <ion-button class="button" (click)="clicked('6')">6</ion-button>
+        <ion-button class="opbtn" (click)="multiplication()">*</ion-button>
+      </div>
+      <div class="row">
+        <ion-button class="button" (click)="clicked('1')">1</ion-button>
+        <ion-button class="button" (click)="clicked('2')">2</ion-button>
+        <ion-button class="button" (click)="clicked('3')">3</ion-button>
+        <ion-button class="opbtn" (click)="subtraction()">-</ion-button>
+      </div>
+      <div class="row">
+        <ion-button class="clear" (click)="clearConsole()">C</ion-button>
+        <ion-button class="button" (click)="clicked('0')">0</ion-button>
+        <ion-button class="equals" (click)="equals()">=</ion-button>
+        <ion-button class="opbtn" (click)="addition()">+</ion-button>
+      </div>
+    </div>
+  </div>
+  
