@@ -1,2 +1,9 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+.ios body {
+    --ion-background-color: #2b124c;
+    --ion-text-color: #D3C3B9;
+  }
+  
+  .md body {
+    --ion-background-color: #161B33;
+    --ion-text-color: #ffffff;
+  }
