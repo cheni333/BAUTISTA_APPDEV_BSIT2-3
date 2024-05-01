@@ -1,0 +1,23 @@
+<ion-header [translucent]="true" style="background-color: #161B33;">
+  <ion-toolbar>
+    <ion-title id="header" style="text-align: center;background-color: #161B33; font-family: Verdana, Geneva, Tahoma, sans-serif;" >
+      <strong>𓇻 SIGNUP 𓇻</strong>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" style = "align-items: center; background-color: #161B33;" class="mine">
+    <input type="text" [(ngModel)]="email" placeholder="Email" class="box"><br><br>
+    <input type="password" [(ngModel)]="password" placeholder="Password" ><br><br>
+    <input type="password" [(ngModel)]="retypePassword" placeholder="Retype Password" ><br><br>
+    <ion-button (click)="signUp()" color = "tertiary">SignUp</ion-button>
+  </div>
+  </ion-content>
+  
