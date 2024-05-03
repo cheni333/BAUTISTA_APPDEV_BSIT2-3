@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.page.scss">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-button class="logout" expand = "block" (click)="logOut()">logout</ion-button>
+  
+<div class="home-container" *ngFor = "let user of userList">
+  <p>STUDENT RECORD</p>   
+  <P>firstname: {{user.firstname}}<br>
+    lastname: {{user.lastname}}<br>
+    course: {{user.course}}<br>
+    section: {{user.section}}<br>
+    dateEnrolled: {{user.dateEnrolled}}<br>
+    gwa: {{user.gwa}}<br>
+    isGraduated: {{user.isGraduated}}<br>
+    <ion-button color = "dark" fill="clear" style="float: right;" (click)="update(user)"><ion-icon name="create"></ion-icon></ion-button>
+  <ion-button color = "dark" fill="clear" style="float: right;" (click)="delete(user)"><ion-icon name="trash"></ion-icon></ion-button><br>
+  </P> 
+    
+  
+</div> <br>
+<br>
+ 
+  <ion-button class="create" expand = "block" href = '/create'>add data</ion-button>
+  
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
